@@ -4,7 +4,7 @@ Este é o meu projeto avaliativo de Dart Puro para a SCTEC (Módulo 01 - Semana 
 
 ## 🔗 Links do Meu Trabalho
 * **Meu Quadro no Trello:** [Clique aqui para ver o meu Trello](https://trello.com/invite/b/6a1c5427c362534a960f88b7/ATTIe751f88637f1c6cac7f3ddb8d3bb0b7f41FB01BF/taskreport-dart-sctec)
-* **Vídeo Explicando o Código:** [Clique aqui para ver o meu vídeo](Deixe este espaço livre ou cole o link aqui depois que gravar)
+* **Vídeo Explicando o Código:** [Clique aqui para ver o meu vídeo](https://drive.google.com/file/d/1FLACCu8WouHxNHB5pnWu1MONd2i6w2if/view?usp=sharing)
 
 ---
 
@@ -30,12 +30,14 @@ taskreport-dart/
 ├── bin/
 │   └── main.dart                 # Arquivo principal que executa o projeto
 │
-└── lib/                          # Onde ficam as minhas classes
-    ├── utilitarios/              # Pasta com as funções de limpar dados
-    │   ├── formatador_texto.dart # Remove espaços em branco de strings
-    │   └── formatador_monetario.dart # Transforma o texto "R$" em número double e trata as horas
-    │
-    ├── atividade.dart            # Classe base molde
-    ├── tarefa.dart               # Classe filha com os dados da tarefa
-    ├── tratamento_dados_api.dart # Lê a lista da API e corrige os erros
-    └── relatorio_operacional.dart# Faz as contas matemáticas e mostra o relatório final
+├── lib/                          # Onde ficam as minhas classes
+│   ├── utilitarios/              # Pasta com as funções de limpar dados
+│   │   ├── formatador_texto.dart # Remove espaços em branco de strings
+│   │   └── formatador_monetario.dart # Transforma o texto "R$" em número double e trata as horas
+│   │
+│   ├── atividade.dart            # Classe base molde
+│   ├── tarefa.dart               # Classe filha com os dados da tarefa
+│   ├── tratamento_dados_api.dart # Lê a lista da API e corrige os erros
+│   └── relatorio_operacional.dart# Faz as contas matemáticas e mostra o relatório final
+│
+└── tarefas-kanban.md
