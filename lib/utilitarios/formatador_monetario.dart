@@ -4,20 +4,18 @@ class FormatadorMonetario {
     
     String texto = valorMoeda.toString();
     
-    // Verifica se existe o sinal de menos em qualquer lugar do texto bruto
     bool ehNegativo = texto.contains('-');
     
     // Limpa tudo o que não é número, vírgula ou ponto
     String limpo = texto;
     limpo = limpo.replaceAll("R\$", "");
-    limpo = limpo.replaceAll("-", ""); // Remove o sinal para não quebrar o parse
+    limpo = limpo.replaceAll("-", "");
     limpo = limpo.replaceAll(".", "");
     limpo = limpo.replaceAll(",", ".");
     limpo = limpo.trim();
     
     double resultado = double.tryParse(limpo) ?? 0.0;
     
-    // Se o texto original tinha o sinal de menos, aplica o negativo no número puro
     return ehNegativo ? resultado * -1 : resultado;
   }
 
